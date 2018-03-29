@@ -13,5 +13,17 @@
 #
 
 def pageTitle(url)
-  # your code here
+
+require 'pismo'
+
+doc = Pismo::Document.new(url)
+
+doc.title
+
+
 end
+
+
+# pageTitle("http://google.com")
+
+# pageTitle("http://www.reddit.com")
